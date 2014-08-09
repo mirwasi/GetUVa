@@ -1,12 +1,13 @@
 # Get UVa
 Requires: wget
+
 Author: Mir Wasi Ahmed
-Reference: gethtml.sh by Rohit Yadav <rohityadav89 AT gmail>
-https://groups.google.com/forum/#!topic/foss-itbhu/MEnI4gyoaLo
+
+Based on Rohit Yadav's <rohityadav89 AT gmail> [post](https://groups.google.com/forum/#!topic/foss-itbhu/MEnI4gyoaLo).
 
 ## Introduction
 
-Two shell scripts '''getuva_pdf.sh''' and '''getuva_html.sh''' will help you to download all the pdf and html problemsets respectively. Tries not to redownload the same stuff.
+Two shell scripts ```getuva_pdf.sh```' and ```getuva_html.sh``` will help you to download all the pdf and html problemsets respectively. Tries not to redownload the same stuff.
 
 ## Usage
 
