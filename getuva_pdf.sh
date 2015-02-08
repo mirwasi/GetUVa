@@ -6,7 +6,11 @@
 # Reference: getpdf.sh by Rohit Yadav <rohityadav AT gmail>
 # https://groups.google.com/forum/#!topic/foss-itbhu/MEnI4gyoaLo
 
-volume_range=$(seq 1 127); # Modify the range to suit your needs
+# Modify the range to suit your needs
+arrA=$(seq 1 17)
+arrB=$(seq 100 129)
+volume_range="$arrA $arrB"
+
 mkdir -p pdfs
 
 for volume in $volume_range;
@@ -22,4 +26,3 @@ do
 	mkdir -p ./pdfs/$volume
 	mv -n $volume*.pdf ./pdfs/$volume 2>/dev/null
 done
-
