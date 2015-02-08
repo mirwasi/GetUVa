@@ -1,4 +1,4 @@
-# UVa PDF Problemset downloader
+# UVa HTML Problemset downloader
 # Filename: getuva_html.sh
 # Requires: wget
 
@@ -6,7 +6,10 @@
 # Reference: gethtml.sh by Rohit Yadav <rohityadav AT gmail>
 # https://groups.google.com/forum/#!topic/foss-itbhu/MEnI4gyoaLo
 
-volume_range=$(seq 1 127); # Modify the range to suit your needs
+# Modify the range to suit your needs
+arrA=$(seq 1 17)
+arrB=$(seq 100 129)
+volume_range="$arrA $arrB"
 mkdir -p htmls
 
 for volume in $volume_range;
