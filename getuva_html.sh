@@ -17,7 +17,7 @@ do
 	for serial in $(seq 0 99);
 	do
 		problem_id=$((100 * $volume + $serial))
-        if [[ ! -f ./htmls/$volume/$problem_id.html ]]; then		
+        if [[ ! -f ./htmls/$volume/$problem_id.html ]] && [[ ! -f ./uva.onlinejudge.org/external/$volume/$problem_id.html ]]; then		
     		wget -p --no-parent --no-check-certificate http://uva.onlinejudge.org/external/$volume/$problem_id.html
     	fi
 	done

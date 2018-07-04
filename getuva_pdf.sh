@@ -18,7 +18,7 @@ do
 	for serial in $(seq 0 99);
 	do
 		problem_id=$((100 * $volume + $serial))
-			if [[ ! -f ./pdfs/$volume/$problem_id.pdf ]]; then    
+			if [[ ! -f ./pdfs/$volume/$problem_id.pdf ]] && [[ ! -f ./$problem_id.pdf ]]; then    
 				wget --no-check-certificate http://uva.onlinejudge.org/external/$volume/$problem_id.pdf
 			fi
 	done
