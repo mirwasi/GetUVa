@@ -18,7 +18,7 @@ do
 	do
 		problem_id=$((100 * $volume + $serial))
         if [[ ! -f ./htmls/$volume/$problem_id.html ]]; then		
-    		wget -p --no-parent http://uva.onlinejudge.org/external/$volume/$problem_id.html
+    		wget -p --no-parent --no-check-certificate http://uva.onlinejudge.org/external/$volume/$problem_id.html
     	fi
 	done
 

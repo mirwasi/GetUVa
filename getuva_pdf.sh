@@ -19,7 +19,7 @@ do
 	do
 		problem_id=$((100 * $volume + $serial))
 			if [[ ! -f ./pdfs/$volume/$problem_id.pdf ]]; then    
-				wget http://uva.onlinejudge.org/external/$volume/$problem_id.pdf
+				wget --no-check-certificate http://uva.onlinejudge.org/external/$volume/$problem_id.pdf
 			fi
 	done
 
